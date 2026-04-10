@@ -1,0 +1,65 @@
+// Misc.
+	$misc: (
+		z-index-base:		10000
+	);
+
+// Duration.
+	$duration: (
+		menu:				0.5s,
+		transition:			0.2s
+	);
+
+// Size.
+	$size: (
+		element-height:		3rem,
+		element-margin:		1.5rem,
+		padding:			2rem,
+		wrapper:			96rem,
+		border-radius:		0.8rem,
+		border-radius-lg:	1.25rem,
+		border-radius-full:	9999px
+	);
+
+// Font.
+	$font: (
+		family:				('Instrument Sans', 'Segoe UI', sans-serif),
+		family-heading:		('Sora', 'Avenir Next', sans-serif),
+		family-fixed:		('Courier New', monospace),
+		weight:				400,
+		weight-bold:		700,
+		weight-heading:		700
+	);
+
+// Palette.
+	$palette: (
+		wrapper-bg:			#0f172a,
+
+		bg:					#ffffff,
+		fg:					#111827,
+		fg-bold:			#111827,
+		fg-light:			mix(#111827, #ffffff, 50%),
+		border:				#e2e8f0,
+		border-bg:			rgba(#e2e8f0, 0.5),
+		accent:				#06b6d4,
+
+		alt: (
+			bg:				#f8fafc,
+			fg:				#334155,
+			fg-bold:		#0f172a,
+			fg-light:		mix(#334155, #f8fafc, 40%),
+			border:			#e2e8f0,
+			border-bg:		rgba(#e2e8f0, 0.6),
+			accent:			#06b6d4,
+		),
+
+		invert: (
+			bg:				#0f172a,
+			bg-alt:			#0f172a,
+			fg:				#f1f5f9,
+			fg-bold:		#ffffff,
+			fg-light:		rgba(#f1f5f9, 0.65),
+			border:			#1e293b,
+			border-bg:		rgba(#334155, 0.12),
+			accent:			#06b6d4,
+		),
+	);

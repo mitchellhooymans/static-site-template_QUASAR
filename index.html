@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dr. Evelyn Marshall | UQ Astrophysics Template</title>
+	<meta name="description" content="Fictional UQ-inspired astrophysics template profile featuring exoplanet research, publications, teaching, and mentorship." />
+	<meta name="theme-color" content="#f5f7ff" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet" />
+
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			darkMode: 'class',
+			theme: {
+				extend: {
+					colors: {
+						astroBg: 'rgb(var(--astro-bg) / <alpha-value>)',
+						astroSurface: 'rgb(var(--astro-surface) / <alpha-value>)',
+						astroSurfaceSoft: 'rgb(var(--astro-surface-soft) / <alpha-value>)',
+						astroText: 'rgb(var(--astro-text) / <alpha-value>)',
+						astroMuted: 'rgb(var(--astro-muted) / <alpha-value>)',
+						astroBorder: 'rgb(var(--astro-border) / <alpha-value>)',
+						astroAccent: 'rgb(var(--astro-accent) / <alpha-value>)',
+						astroAccentStrong: 'rgb(var(--astro-accent-strong) / <alpha-value>)',
+						astroAccentSoft: 'rgb(var(--astro-accent-soft) / <alpha-value>)'
+					},
+					fontFamily: {
+						serif: ['Merriweather', 'serif'],
+						sans: ['Inter', 'sans-serif']
+					},
+					boxShadow: {
+						soft: '0 10px 30px -12px rgba(15, 23, 42, 0.18)'
+					}
+				}
+			}
+		};
+	</script>
+	<style>
+		:root {
+			/* Observatory Dawn palette (light mode) */
+			--astro-bg: 245 247 255;
+			--astro-surface: 255 255 255;
+			--astro-surface-soft: 238 243 255;
+			--astro-text: 15 23 42;
+			--astro-muted: 71 85 105;
+			--astro-border: 205 216 238;
+			--astro-accent: 29 78 216;
+			--astro-accent-strong: 30 58 138;
+			--astro-accent-soft: 219 234 254;
+		}
+
+		html.dark {
+			/* Deep Nebula palette (dark mode) */
+			--astro-bg: 2 6 23;
+			--astro-surface: 11 18 38;
+			--astro-surface-soft: 15 23 42;
+			--astro-text: 226 232 240;
+			--astro-muted: 148 163 184;
+			--astro-border: 51 65 85;
+			--astro-accent: 125 211 252;
+			--astro-accent-strong: 56 189 248;
+			--astro-accent-soft: 8 47 73;
+		}
+
+		body {
+			background-image:
+				radial-gradient(circle at 15% -10%, rgba(59, 130, 246, 0.2), transparent 42%),
+				radial-gradient(circle at 85% 0%, rgba(14, 165, 233, 0.14), transparent 36%);
+		}
+
+		html.dark body {
+			background-image:
+				radial-gradient(circle at 15% -10%, rgba(56, 189, 248, 0.24), transparent 42%),
+				radial-gradient(circle at 85% 0%, rgba(59, 130, 246, 0.16), transparent 36%);
+		}
+	</style>
+	<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-astroBg text-astroMuted font-sans antialiased selection:bg-astroAccent/20 selection:text-astroText">
+	<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-astroSurface focus:px-4 focus:py-2 focus:text-astroText focus:shadow-soft">Skip to content</a>
+
+	<div data-site-component="modern-header"></div>
+
+	<main id="main-content" class="mx-auto w-full max-w-7xl px-6 pb-24 pt-10 lg:px-10">
+		<section id="top" class="grid min-h-[72vh] items-center gap-10 rounded-3xl border border-astroBorder bg-astroSurface p-8 shadow-soft md:grid-cols-2 lg:p-12" data-reveal>
+			<div>
+				<p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-astroAccent">Fictional UQ Template</p>
+				<h1 class="font-serif text-4xl font-black leading-tight text-astroText lg:text-5xl">Dr. Evelyn Marshall</h1>
+				<p class="mt-4 text-lg leading-relaxed text-astroMuted">Investigating exoplanet atmospheres with JWST spectroscopy, Bayesian retrieval, and machine-learning pipelines for next-generation discovery.</p>
+				<div class="mt-8 flex flex-wrap gap-3">
+					<a href="docs/evelyn-marshall-cv.pdf" class="rounded-xl bg-astroAccent px-5 py-3 text-sm font-semibold text-white transition hover:bg-astroAccentStrong dark:text-slate-950">Download CV</a>
+					<a href="#publications" class="rounded-xl border border-astroBorder px-5 py-3 text-sm font-semibold text-astroMuted transition hover:border-astroAccent/60 hover:bg-astroAccentSoft/50 hover:text-astroText">Selected Publications</a>
+				</div>
+			</div>
+
+			<div class="flex justify-center md:justify-end">
+				<div class="w-full max-w-sm rounded-2xl border border-astroBorder bg-astroSurfaceSoft p-6">
+					<svg viewBox="0 0 320 360" class="h-auto w-full rounded-xl bg-astroSurface" role="img" aria-label="Professional headshot placeholder">
+						<rect x="0" y="0" width="320" height="360" fill="rgb(var(--astro-surface-soft))"></rect>
+						<circle cx="160" cy="120" r="56" fill="rgb(var(--astro-border))"></circle>
+						<path d="M70 310c18-58 67-84 90-84s72 26 90 84" fill="rgb(var(--astro-border))"></path>
+						<text x="160" y="344" text-anchor="middle" font-size="14" fill="rgb(var(--astro-muted))" font-family="Inter, sans-serif">Headshot Placeholder</text>
+					</svg>
+					<p class="mt-3 text-center text-xs font-medium uppercase tracking-[0.08em] text-astroMuted">Replace with images/profile.jpg</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="mt-16 grid gap-8 lg:grid-cols-[1.15fr_0.85fr]" data-reveal>
+			<article class="rounded-2xl border border-astroBorder bg-astroSurface p-8 shadow-soft">
+				<h2 class="font-serif text-3xl font-bold text-astroText">About</h2>
+				<p class="mt-4 leading-relaxed text-astroMuted">I am a fictional template persona designed for Queensland astrophysics students. My mock research program focuses on atmospheric characterization of temperate exoplanets using high-resolution spectroscopy and probabilistic inference.</p>
+				<p class="mt-4 leading-relaxed text-astroMuted">This starter profile mirrors common UQ PhD and postdoctoral pathways, combining telescope observations, open-source analysis tooling, and collaborative survey science.</p>
+			</article>
+
+			<aside class="rounded-2xl border border-astroBorder bg-astroSurface p-8 shadow-soft">
+				<h3 class="font-serif text-2xl font-bold text-astroText">Education</h3>
+				<ol class="mt-6 space-y-4 border-l-2 border-astroAccent/35 pl-5">
+					<li>
+						<p class="text-sm font-semibold text-astroAccent">Ph.D. in Astrophysics</p>
+						<p class="text-sm text-astroMuted">University of Melbourne (2016)</p>
+					</li>
+					<li>
+						<p class="text-sm font-semibold text-astroAccent">Postdoctoral Fellow in Exoplanet Science</p>
+						<p class="text-sm text-astroMuted">Swinburne University of Technology (2016-2020)</p>
+					</li>
+					<li>
+						<p class="text-sm font-semibold text-astroAccent">B.Sc. (Hons) in Physics</p>
+						<p class="text-sm text-astroMuted">The University of Queensland (2011)</p>
+					</li>
+				</ol>
+			</aside>
+		</section>
+
+		<section id="research" class="mt-16" data-reveal>
+			<div class="mb-8">
+				<h2 class="font-serif text-3xl font-bold text-astroText">Research Interests</h2>
+				<p class="mt-2 text-astroMuted">Selected fictional research themes inspired by UQ astrophysics and PhD projects.</p>
+			</div>
+			<div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+				<article class="rounded-2xl border border-astroBorder bg-astroSurface p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+					<div class="mb-4 inline-flex rounded-xl bg-astroAccentSoft/80 p-3 text-astroAccent"><i data-lucide="telescope" class="h-5 w-5"></i></div>
+					<h3 class="font-serif text-xl font-bold text-astroText">JWST Atmospheric Retrieval</h3>
+					<p class="mt-2 text-sm leading-relaxed text-astroMuted">Inverse modeling of near-infrared transit spectra to estimate molecular abundances, cloud structure, and thermal gradients in temperate exoplanets.</p>
+				</article>
+				<article class="rounded-2xl border border-astroBorder bg-astroSurface p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+					<div class="mb-4 inline-flex rounded-xl bg-astroAccentSoft/80 p-3 text-astroAccent"><i data-lucide="cpu" class="h-5 w-5"></i></div>
+					<h3 class="font-serif text-xl font-bold text-astroText">Machine Learning Transit Vetting</h3>
+					<p class="mt-2 text-sm leading-relaxed text-astroMuted">Building neural and hybrid Bayesian classifiers to prioritize exoplanet candidates from TESS light curves and reduce false positives.</p>
+				</article>
+				<article class="rounded-2xl border border-astroBorder bg-astroSurface p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+					<div class="mb-4 inline-flex rounded-xl bg-astroAccentSoft/80 p-3 text-astroAccent"><i data-lucide="orbit" class="h-5 w-5"></i></div>
+					<h3 class="font-serif text-xl font-bold text-astroText">Habitable Zone Population Modeling</h3>
+					<p class="mt-2 text-sm leading-relaxed text-astroMuted">Population-level Bayesian inference for estimating biosignature-detectable worlds across nearby stellar catalogs and survey archives.</p>
+				</article>
+			</div>
+		</section>
+
+		<section id="publications" class="mt-16" data-reveal>
+			<div class="mb-8 flex flex-col gap-2">
+				<h2 class="font-serif text-3xl font-bold text-astroText">Selected Publications</h2>
+				<p class="text-astroMuted">Fictional citation-style examples for astrophysics student portfolio templates.</p>
+			</div>
+
+			<div class="grid gap-8 lg:grid-cols-2">
+				<article class="rounded-2xl border border-astroBorder bg-astroSurface p-6 shadow-soft">
+					<p class="text-xs font-semibold uppercase tracking-[0.12em] text-astroAccent">Featured</p>
+					<div class="mt-4 space-y-6">
+						<div>
+							<h3 class="font-serif text-xl font-bold text-astroText">Bayesian Atmospheric Retrieval of WASP-96b from JWST/NIRSpec</h3>
+							<p class="mt-1 text-sm text-astroMuted">Marshall, E., Williams, S. (2024). Nature Astronomy, 8(2), 118–135.</p>
+							<div class="mt-3 flex flex-wrap gap-2">
+								<a href="#" class="rounded-lg border border-astroBorder px-3 py-1.5 text-xs font-semibold text-astroMuted transition hover:bg-astroAccentSoft/60 hover:text-astroText">PDF</a>
+								<a href="#" class="rounded-lg border border-astroBorder px-3 py-1.5 text-xs font-semibold text-astroMuted transition hover:bg-astroAccentSoft/60 hover:text-astroText">DOI</a>
+								<a href="#" class="rounded-lg border border-astroBorder px-3 py-1.5 text-xs font-semibold text-astroMuted transition hover:bg-astroAccentSoft/60 hover:text-astroText">BibTeX</a>
+							</div>
+						</div>
+						<div>
+							<h3 class="font-serif text-xl font-bold text-astroText">Unsupervised Classification of Anomalous Transit Light Curves</h3>
+							<p class="mt-1 text-sm text-astroMuted">Marshall, E., Gupta, J., et al. (2024). The Astrophysical Journal, 971(1), 44–67.</p>
+							<div class="mt-3 flex flex-wrap gap-2">
+								<a href="#" class="rounded-lg border border-astroBorder px-3 py-1.5 text-xs font-semibold text-astroMuted transition hover:bg-astroAccentSoft/60 hover:text-astroText">PDF</a>
+								<a href="#" class="rounded-lg border border-astroBorder px-3 py-1.5 text-xs font-semibold text-astroMuted transition hover:bg-astroAccentSoft/60 hover:text-astroText">DOI</a>
+								<a href="#" class="rounded-lg border border-astroBorder px-3 py-1.5 text-xs font-semibold text-astroMuted transition hover:bg-astroAccentSoft/60 hover:text-astroText">BibTeX</a>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="rounded-2xl border border-astroBorder bg-astroSurface p-6 shadow-soft">
+					<p class="text-xs font-semibold uppercase tracking-[0.12em] text-astroAccent">Recent</p>
+					<div class="mt-4 space-y-6">
+						<div>
+							<h3 class="font-serif text-xl font-bold text-astroText">Wavelength-Indexed Gaussian Processes for Precision Radial Velocity</h3>
+							<p class="mt-1 text-sm text-astroMuted">Marshall, E., Tuomi, M. (2023). Astronomy & Astrophysics, 676, A109.</p>
+							<div class="mt-3 flex flex-wrap gap-2">
+								<a href="#" class="rounded-lg border border-astroBorder px-3 py-1.5 text-xs font-semibold text-astroMuted transition hover:bg-astroAccentSoft/60 hover:text-astroText">PDF</a>
+								<a href="#" class="rounded-lg border border-astroBorder px-3 py-1.5 text-xs font-semibold text-astroMuted transition hover:bg-astroAccentSoft/60 hover:text-astroText">DOI</a>
+								<a href="#" class="rounded-lg border border-astroBorder px-3 py-1.5 text-xs font-semibold text-astroMuted transition hover:bg-astroAccentSoft/60 hover:text-astroText">BibTeX</a>
+							</div>
+						</div>
+						<div>
+							<h3 class="font-serif text-xl font-bold text-astroText">Population-Level Constraints on Biosignature-Detectable Exoplanets</h3>
+							<p class="mt-1 text-sm text-astroMuted">Marshall, E., Rezapoor, A., Williams, S. (2022). The Astrophysical Journal Letters, 941(2), L28.</p>
+							<div class="mt-3 flex flex-wrap gap-2">
+								<a href="#" class="rounded-lg border border-astroBorder px-3 py-1.5 text-xs font-semibold text-astroMuted transition hover:bg-astroAccentSoft/60 hover:text-astroText">PDF</a>
+								<a href="#" class="rounded-lg border border-astroBorder px-3 py-1.5 text-xs font-semibold text-astroMuted transition hover:bg-astroAccentSoft/60 hover:text-astroText">DOI</a>
+								<a href="#" class="rounded-lg border border-astroBorder px-3 py-1.5 text-xs font-semibold text-astroMuted transition hover:bg-astroAccentSoft/60 hover:text-astroText">BibTeX</a>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section id="teaching" class="mt-16 grid gap-8 lg:grid-cols-2" data-reveal>
+			<article class="rounded-2xl border border-astroBorder bg-astroSurface p-6 shadow-soft">
+				<h2 class="font-serif text-3xl font-bold text-astroText">Teaching and Mentorship</h2>
+				<ul class="mt-6 space-y-4 text-sm leading-relaxed text-astroMuted">
+					<li><span class="font-semibold text-astroText">PHYS3401 Astrophysics III</span> - Current</li>
+					<li><span class="font-semibold text-astroText">PHYS2006 Stellar Physics</span> - Current</li>
+					<li><span class="font-semibold text-astroText">PHYS4401 Advanced Observational Astronomy</span> - 2023-2024</li>
+					<li><span class="font-semibold text-astroText">Machine Learning for Astronomy (Graduate Seminar)</span> - 2022-2024</li>
+				</ul>
+			</article>
+
+			<article class="rounded-2xl border border-astroBorder bg-astroSurface p-6 shadow-soft">
+				<h3 class="font-serif text-2xl font-bold text-astroText">Current Students</h3>
+				<ul class="mt-6 space-y-3 text-sm text-astroMuted">
+					<li><span class="font-semibold text-astroText">Jayesh Gupta</span> - Machine-learning vetting of anomalous transit events in TESS light curves</li>
+					<li><span class="font-semibold text-astroText">Sophie Williams</span> - Bayesian hierarchical uncertainty models for atmospheric retrieval</li>
+					<li><span class="font-semibold text-astroText">Amir Rezapoor</span> - Habitable-zone population inference using Gaia and JWST archives</li>
+				</ul>
+			</article>
+		</section>
+	</main>
+
+	<div data-site-component="modern-footer"></div>
+
+	<button id="back-to-top" class="fixed bottom-6 right-6 hidden rounded-full border border-astroBorder bg-astroSurface p-3 text-astroMuted shadow-soft transition hover:bg-astroAccentSoft/70 hover:text-astroText" aria-label="Back to top">
+		<i data-lucide="arrow-up" class="h-5 w-5"></i>
+	</button>
+
+	<script src="assets/js/site-components.js"></script>
+	<script>
+		if (window.SiteComponents && typeof window.SiteComponents.mount === 'function') {
+			window.SiteComponents.mount();
+		}
+
+		lucide.createIcons();
+
+		const root = document.documentElement;
+		const themeMeta = document.querySelector('meta[name="theme-color"]');
+		const themeToggle = document.getElementById('theme-toggle');
+		const themeLabel = document.getElementById('theme-label');
+		const themeMoon = document.getElementById('theme-icon-moon');
+		const themeSun = document.getElementById('theme-icon-sun');
+
+		const resolveInitialTheme = () => {
+			const storedTheme = localStorage.getItem('astro-theme');
+			if (storedTheme === 'light' || storedTheme === 'dark') return storedTheme;
+			return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+		};
+
+		const applyTheme = (theme, persist = true) => {
+			const isDark = theme === 'dark';
+			root.classList.toggle('dark', isDark);
+			if (themeToggle) {
+				themeToggle.setAttribute('aria-pressed', String(isDark));
+				themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+			}
+			if (themeLabel) themeLabel.textContent = isDark ? 'Dark' : 'Light';
+			if (themeMoon) themeMoon.classList.toggle('hidden', isDark);
+			if (themeSun) themeSun.classList.toggle('hidden', !isDark);
+			if (themeMeta) themeMeta.setAttribute('content', isDark ? '#020617' : '#f5f7ff');
+			if (persist) localStorage.setItem('astro-theme', theme);
+		};
+
+		const initialTheme = resolveInitialTheme();
+		applyTheme(initialTheme, false);
+
+		if (themeToggle) {
+			themeToggle.addEventListener('click', () => {
+				const nextTheme = root.classList.contains('dark') ? 'light' : 'dark';
+				applyTheme(nextTheme);
+			});
+		}
+
+		window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+			if (localStorage.getItem('astro-theme')) return;
+			applyTheme(event.matches ? 'dark' : 'light', false);
+		});
+
+		const menuButton = document.getElementById('menu-button');
+		const mobileMenu = document.getElementById('mobile-menu');
+		const backToTop = document.getElementById('back-to-top');
+
+		if (menuButton && mobileMenu) {
+			menuButton.addEventListener('click', () => {
+				const expanded = menuButton.getAttribute('aria-expanded') === 'true';
+				menuButton.setAttribute('aria-expanded', String(!expanded));
+				mobileMenu.classList.toggle('hidden');
+			});
+		}
+
+		document.querySelectorAll('a[href^="#"]').forEach((link) => {
+			link.addEventListener('click', (event) => {
+				const targetId = link.getAttribute('href');
+				if (!targetId || targetId === '#') return;
+				const target = document.querySelector(targetId);
+				if (!target) return;
+				event.preventDefault();
+				target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+					mobileMenu.classList.add('hidden');
+					if (menuButton) menuButton.setAttribute('aria-expanded', 'false');
+				}
+			});
+		});
+
+		const revealItems = document.querySelectorAll('[data-reveal]');
+		revealItems.forEach((item) => {
+			item.classList.add('opacity-0', 'translate-y-4', 'transition', 'duration-700');
+		});
+
+		const observer = new IntersectionObserver((entries, obs) => {
+			entries.forEach((entry) => {
+				if (!entry.isIntersecting) return;
+				entry.target.classList.remove('opacity-0', 'translate-y-4');
+				obs.unobserve(entry.target);
+			});
+		}, { threshold: 0.12 });
+
+		revealItems.forEach((item) => observer.observe(item));
+
+		const handleScroll = () => {
+			if (window.scrollY > 500) {
+				backToTop.classList.remove('hidden');
+			} else {
+				backToTop.classList.add('hidden');
+			}
+		};
+
+		if (backToTop) {
+			window.addEventListener('scroll', handleScroll, { passive: true });
+			handleScroll();
+
+			backToTop.addEventListener('click', () => {
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			});
+		}
+
+		const yearNode = document.getElementById('year');
+		if (yearNode) yearNode.textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
