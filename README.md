@@ -1,13 +1,6 @@
 <div align="center">
   <h1>🎓 Academic Portfolio Template</h1>
   <p>A sleek, professional, and easily customizable purely static website template designed for academic researchers, PhD students, and developers.</p>
-
-  <a href="#-features">Features</a> •
-  <a href="#-getting-started-local-development">Getting Started</a> •
-  <a href="#%EF%B8%8F-step-by-step-customization-guide">Customization</a> •
-  <a href="#-hosting-on-github-pages-free-deployment">Deployment</a>
-
-  <br><br>
   ![Preview](images/Preview.png)
 </div>
 
